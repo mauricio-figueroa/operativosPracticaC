@@ -38,30 +38,6 @@ int main(){
 	nodo1.casaActual=casa1;
 	nodo1.siguiente=&nodo2;
 	
-	
-	
-
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	struct nodoCasa* nodoActual=&nodo1;
 	
 	while(nodoActual->siguiente!=NULL)
