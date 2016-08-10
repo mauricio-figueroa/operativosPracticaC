@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : ejercicio-punteros.c
+ Author      : Mauricio Figueroa
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int n=3;
+	int *p=&n;
+
+
+	printf("Posicion de memoria de p: %i"p)
+	printf("Valor apuntado por p: %d",*p);
+	//puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}

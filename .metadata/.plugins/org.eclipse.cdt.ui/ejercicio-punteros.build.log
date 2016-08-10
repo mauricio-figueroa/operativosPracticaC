@@ -1,0 +1,37 @@
+
+**** Build of configuration Debug for project ejercicio-punteros ****
+
+make all 
+Building file: ../src/ejercicio-punteros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ejercicio-punteros.d" -MT"src/ejercicio-punteros.d" -o"src/ejercicio-punteros.o" "../src/ejercicio-punteros.c"
+../src/ejercicio-punteros.c: In function ‘main’:
+../src/ejercicio-punteros.c:22:24: warning: passing argument 1 of ‘sumarNumeros’ makes pointer from integer without a cast [-Wint-conversion]
+  int *p=*(sumarNumeros(*n,*n2));
+                        ^
+../src/ejercicio-punteros.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ int* sumarNumeros(int*, int*);
+      ^
+../src/ejercicio-punteros.c:22:27: warning: passing argument 2 of ‘sumarNumeros’ makes pointer from integer without a cast [-Wint-conversion]
+Finished building: ../src/ejercicio-punteros.c
+ 
+Building target: ejercicio-punteros
+Invoking: GCC C Linker
+gcc  -o"ejercicio-punteros"  ./src/ejercicio-punteros.o   
+  int *p=*(sumarNumeros(*n,*n2));
+                           ^
+../src/ejercicio-punteros.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ int* sumarNumeros(int*, int*);
+      ^
+../src/ejercicio-punteros.c:22:9: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  int *p=*(sumarNumeros(*n,*n2));
+         ^
+../src/ejercicio-punteros.c:24:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int *’ [-Wformat=]
+  printf("Ahora Lo apuntado por p vale: %d y el contenido de p vale: %d\n", *p, &*p);
+         ^
+../src/ejercicio-punteros.c: In function ‘sumarNumeros’:
+../src/ejercicio-punteros.c:34:9: warning: return makes pointer from integer without a cast [-Wint-conversion]
+Finished building target: ejercicio-punteros
+  return *p;
+         ^
+ 

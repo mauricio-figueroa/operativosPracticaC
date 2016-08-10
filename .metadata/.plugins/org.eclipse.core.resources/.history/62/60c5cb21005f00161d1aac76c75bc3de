@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : ejercicio-punteros.c
+ Author      : Mauricio Figueroa
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int* sumarNumeros(int*, int*);
+
+int main(void) {
+
+
+	int *n=malloc(sizeof(int));
+	int *n2=malloc(sizeof(int));
+
+	int *p=sumarNumeros(*n,*n2);
+
+	printf("Ahora Lo apuntado por p vale: %d y el contenido de p vale: %d\n", *p, &*p);
+
+
+	return 0;
+}
+
+
+int* sumarNumeros(int* n1, int* n2){
+	int *p=malloc(sizeof(int));
+	*p=*n1+*n2;
+	return p;
+
+}
