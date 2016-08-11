@@ -6,15 +6,23 @@ Building file: ../src/Punterooos.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Punterooos.d" -MT"src/Punterooos.d" -o"src/Punterooos.o" "../src/Punterooos.c"
 ../src/Punterooos.c: In function ‘main’:
-../src/Punterooos.c:29:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-src/subdir.mk:18: fallo en las instrucciones para el objetivo 'src/Punterooos.o'
-  *apuntadorString=&string;
-                  ^
+../src/Punterooos.c:38:2: warning: implicit declaration of function ‘llenarVector’ [-Wimplicit-function-declaration]
+  llenarVector(vector, 5);
+  ^
+../src/Punterooos.c:19:7: warning: variable ‘string’ set but not used [-Wunused-but-set-variable]
+  char string[25];
+       ^
 ../src/Punterooos.c: At top level:
-../src/Punterooos.c:42:6: error: conflicting types for ‘mostrarStringPuntero’
- void mostrarStringPuntero(char* punteroString[],int cantLetras){
+../src/Punterooos.c:43:6: warning: conflicting types for ‘llenarVector’
+ void llenarVector(int vector[], int cantPosiciones) {
       ^
-../src/Punterooos.c:15:6: note: previous declaration of ‘mostrarStringPuntero’ was here
- void mostrarStringPuntero(char[],int);
-      ^
-make: *** [src/Punterooos.o] Error 1
+../src/Punterooos.c:38:2: note: previous implicit declaration of ‘llenarVector’ was here
+Finished building: ../src/Punterooos.c
+ 
+Building target: Punterooos
+  llenarVector(vector, 5);
+Invoking: GCC C Linker
+gcc  -o"Punterooos"  ./src/Punterooos.o   
+  ^
+Finished building target: Punterooos
+ 

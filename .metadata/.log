@@ -181,3 +181,8 @@ java.io.FileNotFoundException: /home/mauriciofigueroa/Escritorio/practica c/oper
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf 4 10004 2016-08-11 10:41:25.340
+!MESSAGE Invalid breakpoint parameter(s)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-08-11 10:41:25.340
+!MESSAGE Invalid breakpoint parameter(s)
