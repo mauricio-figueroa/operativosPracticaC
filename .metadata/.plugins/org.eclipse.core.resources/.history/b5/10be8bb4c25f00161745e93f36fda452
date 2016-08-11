@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : Punterooos.c
+ Author      : Mauricio Figueroa
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+
+	char string1[25];
+	string[0]='M';
+	string[1]='A';
+	string[2]='U';
+	string[3]='R';
+	string[4]='Y';
+
+
+
+
+	//puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	printf("%c",string[0]);
+
+	return EXIT_SUCCESS;
+
+
+
+}
